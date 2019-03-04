@@ -251,10 +251,11 @@ input {
     }
 
     .flex {
-        position: absolute;
+        position: relative;
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* justify-content: center; */
     }
-    }
+    
 }
