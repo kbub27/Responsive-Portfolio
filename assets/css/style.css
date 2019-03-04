@@ -104,6 +104,10 @@ input {
     width: 920px;
 }
 
+textarea {
+    width: 920px;
+}
+
 .submit {
     width: 80px;
     background: #4aaaa5;
@@ -195,4 +199,62 @@ input {
 .bot1 {
     background: #4aaaa5;
     color: #ffffff;
+}
+
+/* Media Queries Below */
+
+@media screen and (max-width: 980px) {
+    #container {
+        width: 630px;
+        margin: 20px;
+    }
+
+    .imgTable {
+        width: 630px;
+        margin: 20px;
+    }
+
+    input,
+    textarea {
+        width: 620px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 630px;
+        margin: 20px;
+    }
+   
+    header {
+        width: 660px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        width: 380px;
+        margin: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+    }
+
+    .flex {
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    }
 }
