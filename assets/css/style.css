@@ -55,9 +55,8 @@ li {
 }
 
 img {
-    height: 150px;
     width: 200px;
-    margin: 10px 10px 0px 0px;
+    height: 150px;
 }
 
 .imgTable {
@@ -140,24 +139,29 @@ input {
 }
 
 .flex {
-    /* position: relative; */
     text-align: left;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    
+    width: 50%;
 }
 
 .projectDiv {
-    float:right;
     position: relative;
     width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
 }
 
 .projectText {
     position: absolute;
     bottom: 0;
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
     width: 100%;
 }
 
@@ -238,12 +242,5 @@ input {
         width: 330px;
     }
 
-    .top1,
-.top2,
-.mid1,
-.mid2,
-.bot1 {
-    width: 94%;
-}
 
 }
