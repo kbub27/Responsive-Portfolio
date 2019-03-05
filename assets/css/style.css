@@ -140,65 +140,25 @@ input {
 }
 
 .flex {
-    position: relative;
+    /* position: relative; */
     text-align: left;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
 }
 
-.top1 {
+.projectDiv {
+    float:right;
+    position: relative;
+    width: 200px;
+}
+
+.projectText {
     position: absolute;
-    top: 112px;
-    left: 0px;
-    width: 180px;
-    padding: 10px;
-    text-align: center;
-}
-
-.top2 {
-    position: absolute;
-    top: 112px;
-    left: 214px;
-    padding: 10px;
-    text-align: center;
-    width: 180px;
-}
-
-.mid1 {
-    position: absolute;
-    top: 276px;
-    left: 0px;
-    text-align: center;
-    width: 180px;
-    padding: 10px;
-}
-
-.mid2 {
-    position: absolute;
-    top: 276px;
-    left:214px;
-    text-align: center;
-    padding: 10px;
-    width: 180px;
-}
-
-.bot1 {
-    position: absolute;
-    top: 440px;
-    left: 0px;
-    text-align: center;
-    padding: 10px;
-    width: 180px;
-}
-
-.top1,
-.top2,
-.mid1,
-.mid2,
-.bot1 {
-    background: #4aaaa5;
-    color: #ffffff;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Media Queries Below */
@@ -227,11 +187,11 @@ input {
         width: 630px;
         margin: 20px;
     }
-   
+
     header {
         width: 660px;
     }
-    
+
 }
 
 @media screen and (max-width: 640px) {
@@ -240,22 +200,50 @@ input {
         flex-direction: column;
         justify-content: center;
         flex-grow: 1;
-        width: 380px;
+        width: 340px;
         margin: 20px;
+    }
+
+    .imgTable {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        width: 330px;
+        margin: 20px;
+    }
+
+    img {
+        width: 100%;
     }
 
     header {
         display: flex;
         flex-direction: column;
-        width: 420px;
+        width: 100%;
+        justify-content: center;
     }
 
     .flex {
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        /* justify-content: center; */
+      width: 100%;
     }
-    
+
+    .myPhoto {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    input,
+    textarea {
+        width: 330px;
+    }
+
+    .top1,
+.top2,
+.mid1,
+.mid2,
+.bot1 {
+    width: 94%;
+}
+
 }
