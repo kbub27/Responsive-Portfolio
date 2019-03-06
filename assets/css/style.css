@@ -167,7 +167,7 @@ input {
 
 /* Media Queries Below */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) { 
     #container {
         width: 630px;
         margin: 20px;
@@ -183,7 +183,16 @@ input {
         width: 620px;
     }
 
-}
+    .flex {
+        width: 80%;
+    }
+
+    header {
+        width: 910px;
+        margin: 20px auto;
+    }
+
+} 
 
 
 @media screen and (max-width: 768px) {
@@ -196,7 +205,12 @@ input {
         width: 660px;
     }
 
+    .flex {
+        width: 80%;
+    }
+
 }
+
 
 @media screen and (max-width: 640px) {
     #container {
@@ -241,6 +255,5 @@ input {
     textarea {
         width: 330px;
     }
-
 
 }
